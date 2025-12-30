@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout – FoodPrime</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="checkout-body">
+    <div class="checkout-container">
+      <h2>Complete Your Order</h2>
+
+      <div class="checkout-flex">
+        <!-- CART ITEMS SECTION -->
+        <div class="checkout-cart">
+          <h3>Your Items</h3>
+
+          <!-- IMPORTANT: These IDs must match the script -->
+          <ul id="checkout-list"></ul>
+
+          <h3>Total: $<span id="checkout-total">0.00</span></h3>
+        </div>
+
+        <!-- USER DETAILS -->
+        <div class="checkout-form">
+          <h3>Delivery Details</h3>
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Address" />
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="Phone Number" />
+          <button class="btn big-btn">Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORKING SCRIPT -->
+    <script>
+      const cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+      const list = document.getElementById("checkout-list");
+      const totalBox = document.getElementById("checkout-total");
+
+      let total = 0;
+
+      cart.forEach((item) => {
+        // Safety check if qty missing
+        const qty = item.qty ? item.qty : 1;
+        const subtotal = qty * item.price;
+        total += subtotal;
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+                ${item.name}
+                <strong>(${qty}×)</strong>
+                — $${subtotal.toFixed(2)}
+            `;
+        list.appendChild(li);
+      });
+
+      totalBox.textContent = total.toFixed(2);
+    </script>
+  </body>
+</html>

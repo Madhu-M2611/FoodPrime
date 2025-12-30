@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodPrime – Trendy Food App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">FoodPrime</div>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Premium Food Delivered Fresh</h1>
+        <p>Hand-crafted meals made with love. Order now.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu">
+      <h2>Today's Special Menu</h2>
+
+      <div class="food-grid">
+        <!-- 16 Trendy Food Items -->
+
+        <!-- 1 Pizza -->
+        <div class="food-card" data-name="Pepperoni Pizza" data-price="13.49">
+          <img
+            src="https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+            alt=""
+          />
+          <h3>Pepperoni Pizza</h3>
+          <p>$13.49</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 2 Pizza -->
+        <div
+          class="food-card"
+          data-name="Cheese Burst Pizza"
+          data-price="11.79"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1548365328-9dda7d7ad0a1"
+            alt=""
+          />
+          <h3>Cheese Burst Pizza</h3>
+          <p>$11.79</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 3 Burgers -->
+        <div class="food-card" data-name="Double Beef Burger" data-price="9.89">
+          <img
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+            alt=""
+          />
+          <h3>Double Beef Burger</h3>
+          <p>$9.89</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 4 Chicken Burger -->
+        <div
+          class="food-card"
+          data-name="Crispy Chicken Burger"
+          data-price="8.99"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1606756790138-6ec2ba1f54f2"
+            alt=""
+          />
+          <h3>Crispy Chicken Burger</h3>
+          <p>$8.99</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 5 Bowls -->
+        <div class="food-card" data-name="Chicken Rice Bowl" data-price="11.99">
+          <img
+            src="https://images.unsplash.com/photo-1606755962773-0ff79474f2ea"
+            alt=""
+          />
+          <h3>Chicken Rice Bowl</h3>
+          <p>$11.99</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 6 Bowls -->
+        <div class="food-card" data-name="Asian Veggie Bowl" data-price="10.49">
+          <img
+            src="https://images.unsplash.com/photo-1512058564366-18510be2db19"
+            alt=""
+          />
+          <h3>Asian Veggie Bowl</h3>
+          <p>$10.49</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 7 Desserts -->
+        <div class="food-card" data-name="Chocolate Cake" data-price="6.49">
+          <img
+            src="https://images.unsplash.com/photo-1601972599720-259ad6ea984a"
+            alt=""
+          />
+          <h3>Chocolate Cake</h3>
+          <p>$6.49</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 8 Dessert -->
+        <div class="food-card" data-name="Fruit Custard Tart" data-price="6.99">
+          <img
+            src="https://images.unsplash.com/photo-1505253216365-8a7cd4b5905f"
+            alt=""
+          />
+          <h3>Fruit Custard Tart</h3>
+          <p>$6.99</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 9 Drinks -->
+        <div
+          class="food-card"
+          data-name="Strawberry Ice Shake"
+          data-price="5.49"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1565549160608-df0ed4d57103"
+            alt=""
+          />
+          <h3>Strawberry Ice Shake</h3>
+          <p>$5.49</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 10 -->
+        <div class="food-card" data-name="Cold Coffee" data-price="3.99">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+            alt=""
+          />
+          <h3>Cold Coffee</h3>
+          <p>$3.99</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 11 Wrap -->
+        <div class="food-card" data-name="Chicken Wrap" data-price="7.89">
+          <img
+            src="https://images.unsplash.com/photo-1603048707628-1c4fb5a56b16"
+            alt=""
+          />
+          <h3>Chicken Wrap</h3>
+          <p>$7.89</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 12 Sandwich -->
+        <div class="food-card" data-name="Grilled Sandwich" data-price="6.29">
+          <img
+            src="https://images.unsplash.com/photo-1550317138-300136cc9f4d"
+            alt=""
+          />
+          <h3>Grilled Sandwich</h3>
+          <p>$6.29</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 13 Waffles -->
+        <div class="food-card" data-name="Honey Waffles" data-price="7.29">
+          <img
+            src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445"
+            alt=""
+          />
+          <h3>Honey Waffles</h3>
+          <p>$7.29</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- 14 Ice Cream -->
+        <div class="food-card" data-name="Vanilla Ice Cream" data-price="4.29">
+          <img
+            src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40"
+            alt=""
+          />
+          <h3>Vanilla Ice Cream</h3>
+          <p>$4.29</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section class="cart-section" id="cart">
+      <h2>Your Cart</h2>
+
+      <div class="cart-box">
+        <ul id="cart-list"></ul>
+
+        <div class="cart-total">
+          <h3>Total: $<span id="total-price">0.00</span></h3>
+          <a href="checkout.html" class="btn checkout-btn">Go to Checkout</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 FoodPrime. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
